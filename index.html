@@ -14,7 +14,7 @@
       }
 
       .container {
-        max-width: 600px;
+        max-width: 800px;
         margin: 0 auto;
         padding: 20px;
       }
@@ -26,7 +26,7 @@
         text-align: center;
       }
 
-      img {
+      #profile {
         display: block;
         margin: 0 auto;
         max-width: 200px;
@@ -65,7 +65,8 @@
         text-align: center;
         font-size: 14px;
         font-weight: 500;
-        margin: 0 0 5px;
+        padding-left: 55px;
+        padding-top: 5px;
       }
 
       .link p {
@@ -74,6 +75,10 @@
         font-size: 14px;
         color: #888;
       }
+      #pic {
+          border-radius: 20px;
+          width: 100px;
+        }
 
       /* Add some responsive styles for smaller screens */
       @media (max-width: 600px) {
@@ -104,6 +109,17 @@
         .link:nth-child(odd) {
           margin-right: 0;
         }
+
+        #pic {
+          width: 70px;
+          margin-top: -10px;
+          margin-left: -12%;
+          margin-bottom: -15px;
+          border-radius: 10px;
+        }
+        .contain {
+          display: flex;
+        }
       }
     </style>
   </head>
@@ -114,14 +130,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&amp;display=swap" rel="stylesheet"/>
         
     <div class="container">
-      <img src="profilepic.PNG" alt="Profile picture">
+      <img id="profile" src="profilepic.PNG" alt="Profile picture">
       <h1>@moana_simona</h1>
       
       <div class="links">
-        
+
         <div class="link">
           <a href="https://example.com">
-            <h2>НАЙ-БРУТАЛНАТА ПАРТИ ИГРА</h2>
+              
+            <div class="contain">
+              <div>
+                <img id="pic" src="profilepic.PNG" alt="Link photo">
+              </div>
+
+              <div>
+                <h2>НАЙ-БРУТАЛНАТА ПАРТИ ИГРА</h2>
+              </div>
+            </div>
           </a>
         </div>
         
