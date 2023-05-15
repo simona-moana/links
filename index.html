@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>My Linktree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       /* Add some basic styles to make the page look nicer */
       body {
@@ -68,6 +69,34 @@
         margin: 0;
         font-size: 14px;
         color: #888;
+      }
+
+      /* Add some responsive styles for smaller screens */
+      @media (max-width: 600px) {
+        .container {
+          max-width: 100%;
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 20px;
+        }
+
+        img {
+          max-width: 150px;
+        }
+
+        .links {
+          flex-direction: column;
+        }
+
+        .link {
+          width: 100%;
+        }
+
+        .link:nth-child(odd) {
+          margin-right: 0;
+        }
       }
     </style>
   </head>
